@@ -3,7 +3,7 @@ import queryString from 'query-string';
 
 const getToken = () => localStorage.getItem('token');
 const axiosClient = axios.create({
-  baseURL: 'http://localhost:4000/api/v1',
+  baseURL: ' https://kanban-app-nodejs-server.herokuapp.com/api/v1',
   paramsSerializer: (params) => queryString.stringify({ params }),
 });
 
